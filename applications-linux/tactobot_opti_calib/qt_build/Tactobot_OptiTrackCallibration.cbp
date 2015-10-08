@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="Tactobot_OptiTrackCallibration" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="OptiTrack">
+         <Option output="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/libOptiTrack.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-D_LINUX" />
+            <Add option="-DLINUX" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/TypeIVRML1.2.8_Academic/include" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/optitrack/include" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/chai3d-3.0/chai3d" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/eigen" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/sUtil/src" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/tinyxml" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/src" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/src/scl" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/src/scl/dynamics/tao" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 OptiTrack" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="OptiTrack/fast">
+         <Option output="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/libOptiTrack.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-D_LINUX" />
+            <Add option="-DLINUX" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/TypeIVRML1.2.8_Academic/include" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/optitrack/include" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/chai3d-3.0/chai3d" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/eigen" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/sUtil/src" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/tinyxml" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/src" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/src/scl" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/src/scl/dynamics/tao" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 OptiTrack/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tactobot_opti_calib">
+         <Option output="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/tactobot_opti_calib" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-D_LINUX" />
+            <Add option="-DLINUX" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/TypeIVRML1.2.8_Academic/include" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/optitrack/include" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/chai3d-3.0/chai3d" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/eigen" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/sUtil/src" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/tinyxml" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/src" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/src/scl" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/src/scl/dynamics/tao" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 tactobot_opti_calib" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tactobot_opti_calib/fast">
+         <Option output="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/tactobot_opti_calib" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-D_LINUX" />
+            <Add option="-DLINUX" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/TypeIVRML1.2.8_Academic/include" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/optitrack/include" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/chai3d-3.0/chai3d" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/eigen" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/sUtil/src" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/3rdparty/tinyxml" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/src" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/src/scl" />
+            <Add directory="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/../../3rdparty/scl.git/src/scl/dynamics/tao" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 tactobot_opti_calib/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/qt_build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/3rdparty/optitrack/src/OptiTrack.cpp">
+      </Unit>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/3rdparty/scl.git/src/scl/graphics/chai/CGraphicsChai.cpp">
+      </Unit>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/3rdparty/scl.git/src/scl/graphics/chai/ChaiGlutHandlers.cpp">
+      </Unit>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/CTaskOpOri.cpp">
+      </Unit>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/CTaskOpPosition.cpp">
+      </Unit>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/STaskOpOri.cpp">
+      </Unit>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/STaskOpPosition.cpp">
+      </Unit>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/tactobot_opti_calib.cpp">
+      </Unit>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/3rdparty/scl.git/src/scl/graphics/chai/CGraphicsChai.hpp">
+      </Unit>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/3rdparty/scl.git/src/scl/graphics/chai/ChaiGlutHandlers.hpp">
+      </Unit>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/CTaskOpOri.hpp">
+      </Unit>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/CTaskOpPosition.hpp">
+      </Unit>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/STaskOpOri.hpp">
+      </Unit>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/STaskOpPosition.hpp">
+      </Unit>
+      <Unit filename="/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_opti_calib/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

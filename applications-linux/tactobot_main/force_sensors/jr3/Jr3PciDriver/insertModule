@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Written by Fabian Gerlinghaus - gerlinghaus@cs.stanford.edu
+
+# First remove all modules from the kernel
+
+sudo modprobe -r jr3
+sudo modprobe -r jr3_pci
+sudo modprobe -r comedi
+
+sudo depmod
+
+sudo rm /dev/jr3
+
+# Create the node
+if [ -e "/dev/jr3" ]
+then
+	echo "Node already exists!"
+else
+	echo "Creating the node!"
+	sudo mknod /dev/jr3 c 200 0
+fi
+
+# Insert the Jr3Pci Driver Kernel Module if it hasn't been inserted already
+if lsmod | grep --quiet jr3;
+then
+	echo "Jr3PciDriver Kernel Module previously loaded"
+else
+	echo "Inserting Kernel Module Jr3PciDriver"
+	sudo insmod /home/fabian/KUKA_Teleoperation/01_Drivers/scl-manips-group.git/3rdparty/Jr3PciDriver/drv_linux/jr3.ko
+fi
+

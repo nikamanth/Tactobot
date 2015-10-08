@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<!DOCTYPE LOTUS SYSTEM "scl.dtd">
+
+<!-- Units are in Std International System -->
+<scl>
+    <robot name="wamBot">
+        <spec>wam</spec>
+        <file>../../specs/Barrett/wam.xml</file>
+        <gravity>0.000   0.000   -9.81</gravity>
+        <root_link>
+            <link_name>base</link_name>
+            <position_in_parent>-0.100   0.000   -0.100</position_in_parent>
+            <orientation_in_parent>0.000  0.000   0.000   1.000</orientation_in_parent>
+            <graphics>
+                <obj_file>
+                    <name>Barrett/graphics/base.obj</name>
+                    <position_in_parent>0.000000 0.000000 0.000000</position_in_parent>
+                    <orientation_in_parent>0.000000 0.000000 0.000000 1.000000</orientation_in_parent>
+                    <scaling>1.000000 1.000000 1.000000</scaling>
+                    <collision_type>0</collision_type>
+                </obj_file>
+            </graphics>
+        </root_link>
+        <!-- These flags can control the simulation's default behavior. -->
+        <flag_gc_damping>false</flag_gc_damping>
+        <flag_gc_limits>false</flag_gc_limits>  <!-- Apply gc position limits (joint limits) -->
+        <flag_actuator_force_limits>true</flag_actuator_force_limits>
+        <flag_actuator_vel_limits>true</flag_actuator_vel_limits>
+        <flag_actuator_acc_limits>true</flag_actuator_acc_limits>
+        <flag_controller_on>true</flag_controller_on>  <!-- Controller enabled at the start -->
+        <flag_logging_on>false</flag_logging_on>
+        <flag_wireframe_on>false</flag_wireframe_on>
+        <option_axis_frame_size>0.2</option_axis_frame_size> <!-- All options are optional -->
+    </robot>
+
+    <graphics name="wamBotStdView">
+        <camera>
+            <pos>2.5   0.0   0.5</pos>
+            <lookat>0.0   0.0   0.5</lookat>
+            <up>0   0   1</up>
+            <clip>0 4</clip>
+            <background>0 0 0</background>
+        </camera>
+        <light>
+            <pos>2.0   0.0   0.0</pos>
+            <lookat>0.0   0.0   0.5</lookat>
+        </light>
+        <light>
+            <pos>2.0   1.0   2.0</pos>
+            <lookat>0.0   0.0   0.5</lookat>
+        </light>
+        <light>
+            <pos>-2.0   0.0   0.0</pos>
+            <lookat>0.0   0.0   0.0</lookat>
+        </light>
+        <background_color>0.0 0.0 0.0</background_color>
+    </graphics>
+
+    <!-- TODO not tuned -->
+    <controller name="wamGcCtrl">
+        <type>gc</type>
+        <must_use_robot>wamBot</must_use_robot>
+        <kp>0</kp>
+        <kv>35</kv>
+        <ka>0</ka>
+        <ki>20</ki>
+        <force_max>5000</force_max>
+        <force_min>-5000</force_min>
+    </controller>
+
+    <!-- TODO not tuned -->
+    <controller name="opc">
+        <type>task</type>
+        <must_use_robot>wamBot</must_use_robot>
+        <!-- How often to recompute the model wrt. servo ticks. Default = 1 -->
+        <option_servo_to_model_rate>1</option_servo_to_model_rate>
+
+
+    <task name="wrist">
+        <type>TaskOpOri</type>
+        <parent_link>link7</parent_link>
+        <pos_in_parent>0.00 0.00 0.00</pos_in_parent>
+        <priority>0</priority>
+        <task_dof>3</task_dof>
+        <kp>1</kp>
+        <kv>1</kv>
+        <ka>0</ka>
+        <force_max>0.2</force_max>
+        <force_min>-0.2</force_min>
+        <flag_compute_op_gravity>0</flag_compute_op_gravity>
+        <flag_compute_op_cc_forces>0</flag_compute_op_cc_forces>
+        <flag_compute_op_inertia>0</flag_compute_op_inertia>
+    </task> 
+
+
+    <task name="hand">
+        <type>TaskOpPosition</type>
+        <parent_link>link7</parent_link>
+        <pos_in_parent>0.0 0.00 0.19</pos_in_parent>
+        <priority>1</priority>
+        <task_dof>3</task_dof>
+        <kp>0</kp>
+        <kv>0</kv>
+        <ka>0</ka>
+        <force_max>15</force_max>
+        <force_min>-15</force_min>
+        <flag_compute_op_gravity>0</flag_compute_op_gravity>
+        <flag_compute_op_cc_forces>0</flag_compute_op_cc_forces>
+        <flag_compute_op_inertia>0</flag_compute_op_inertia>
+    </task> 
+
+   <!-- <task name="force">
+        <type>TaskOpForce</type>
+        <parent_link>link7</parent_link>
+        <pos_in_parent>0.0 0.00 0.01</pos_in_parent>
+        <priority>2</priority>
+        <task_dof>6</task_dof>
+        <kp>50</kp>
+        <kv>20</kv>
+        <ka>0</ka>
+        <force_max>15</force_max>
+        <force_min>-15</force_min>
+        <flag_compute_op_gravity>0</flag_compute_op_gravity>
+        <flag_compute_op_cc_forces>0</flag_compute_op_cc_forces>
+        <flag_compute_op_inertia>0</flag_compute_op_inertia>
+    </task> -->
+
+ <!--<task name="GcCenteringTask">
+            <type>TaskGcLimitCentering</type>
+            <priority>2</priority>
+            <task_dof>0</task_dof> 
+            <kp>50</kp>
+            <kv>35</kv>
+            <ka>0</ka>
+            <force_max>100</force_max>
+            <force_min>-100</force_min>
+        </task> -->
+
+   <!-- <task name="JointAngleSetTask">
+            <type>TaskGcSet</type>
+            <priority>2</priority>
+            <task_dof>2</task_dof>
+            <kp>2</kp>
+            <kv>1</kv>
+            <ka>0</ka>
+            <force_max>10</force_max>
+            <force_min>-10</force_min>
+            <gc_set_names>link2 link3</gc_set_names>
+            <gc_set_pos_des>1.57 1.57</gc_set_pos_des>
+        </task> -->
+
+
+  <!--<task name="GcTask">
+            <type>TaskGc</type>
+            <priority>0</priority>
+            <task_dof>0</task_dof> 
+            <kp>30</kp>
+            <kv>10</kv>
+            <ka>0</ka>
+            <force_max>40</force_max>
+            <force_min>-40</force_min>
+        </task>
+
+   <task name="NullSpaceDampingTask">
+            <type>TaskNullSpaceDamping</type>
+            <priority>2</priority>
+            <task_dof>0</task_dof> 
+            <kp>0</kp>
+            <kv>5</kv>
+            <ka>0</ka>
+            <force_max>4</force_max>
+            <force_min>-4</force_min>
+        </task>  -->
+
+        <!-- This task removes some range space
+             from the lower pri tasks
+             Note: Task dofs should match the gc set's size 
+        <task name="JointAngleSetTask">
+            <type>TaskGcSet</type>
+            <priority>1</priority>
+            <task_dof>1</task_dof>
+            <kp>30</kp>
+            <kv>10</kv>
+            <ka>0</ka>
+            <force_max>80</force_max>
+            <force_min>-80</force_min>
+            <gc_set_names>link5</gc_set_names>
+            <gc_set_pos_des>0.8</gc_set_pos_des>
+        </task>-->
+
+       <!-- <task name="GcTask">
+            <type>TaskGc</type>
+            <priority>1</priority>
+            <task_dof>0</task_dof> 
+            <kp>10</kp>
+            <kv>8</kv>
+            <ka>0</ka>
+            <force_max>50</force_max>
+            <force_min>-50</force_min>
+            <flag_compute_gravity>1</flag_compute_gravity>
+            <flag_compute_cc_forces>0</flag_compute_cc_forces>
+            <flag_compute_inertia>1</flag_compute_inertia>
+        </task> -->
+
+    </controller>
+</scl>

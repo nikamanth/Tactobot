@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../optitrack/include/OptiTrack.h
+stdio.h
+-
+math.h
+-
+vrpn_Connection.h
+-
+vrpn_Tracker.h
+-
+iostream
+-
+
+/home/cs225a-wam/Documents/scl-tactobot/tactobot/tactobot_hardcode/optitrack/src/OptiTrack.cpp
+OptiTrack.h
+/home/cs225a-wam/Documents/scl-tactobot/tactobot/tactobot_hardcode/optitrack/src/OptiTrack.h
+

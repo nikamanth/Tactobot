@@ -1,0 +1,2 @@
+/home/cs225a-wam/Documents/scl-tactobot/tactobot/tactobot_actual_bot/qt_build/CMakeFiles/OptiTrack.dir
+/home/cs225a-wam/Documents/scl-tactobot/tactobot/tactobot_actual_bot/qt_build/CMakeFiles/scl_tutorial5_control_multi_task.dir

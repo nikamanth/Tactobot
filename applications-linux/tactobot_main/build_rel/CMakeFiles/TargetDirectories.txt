@@ -1,0 +1,2 @@
+/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_main/build_rel/CMakeFiles/OptiTrack.dir
+/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/applications-linux/tactobot_main/build_rel/CMakeFiles/tactobot_main.dir

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libOptiTrack.a  CMakeFiles/OptiTrack.dir/home/cs225a-wam/CS225A-Tactobot/manips-wam-tactobot.git/3rdparty/optitrack/src/OptiTrack.cpp.o
+/usr/bin/ranlib libOptiTrack.a

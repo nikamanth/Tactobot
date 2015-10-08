@@ -1,0 +1,6 @@
+Driver for a Barrett WAM robotic arm through Redis pub/sub
+
+Please read documentation on the wiki:
+https://bitbucket.org/samirmenon/scl-manips-v2/wiki/Home
+under the section:
+Barrett WAM Operation

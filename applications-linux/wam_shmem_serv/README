@@ -1,0 +1,7 @@
+This is how you clear shared memory in case the server crashes or exits without clearing stuff out.
+
+Check ipc 
+ $ ipcs -m
+
+If the shared memory "8080" is occupied, delete it using the id in hex 
+ $ sudo ipcrm -M 0x00001f90
